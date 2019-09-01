@@ -20,7 +20,7 @@ int main(void)
         }    
         for (int h = 0; h < i + 1; h++)
         {
-        printf("#");
+            printf("#");
         }
         //add function to print on new line after each iteration
         printf("\n");
