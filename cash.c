@@ -16,7 +16,7 @@ int main(void)
     while (x < 0);
     
     //Turn decimal into integer
-    change = x * 100;
+    change = round(x * 100);
     
     int coins = 0;
     
@@ -24,19 +24,19 @@ int main(void)
     while (change >= 25)
     {
         coins ++;
-        change = change -25;
+        change = change - 25;
     }
     
     while (change >= 10)
     {
         coins++;
-        change = change -10;
+        change = change - 10;
     }
     
     while (change >= 5)
     {
         coins++;
-        change = change -5;
+        change = change - 5;
     }
     
     while (change >= 1)
