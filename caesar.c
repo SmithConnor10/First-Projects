@@ -39,9 +39,10 @@ int main(int argc, string argv[2])
     
     //Prompt user for a string - convert to plaintext
     string plaintext = get_string("plaintext: ");
-    
+    printf("ciphertext: ");
     //Loop over plaintext and output cipher text
     for (int i = 0, len = strlen(plaintext); i < len; i++)
+ 
     {  
         if (islower(plaintext[i]))
             printf("%c", (plaintext[i] -'a' + k) % 26 + 'a');
@@ -50,7 +51,7 @@ int main(int argc, string argv[2])
             printf("%c", (plaintext[i] -'A' + k) % 26 + 'A');
             
         else
-            printf("ciphertext: %c", plaintext[i]);
+            printf("%c", plaintext[i]);
     }  
     printf("\n");
 }
