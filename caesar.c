@@ -16,8 +16,7 @@ int main(int argc, string argv[2])
     {
         printf("Success\n");
     }
-    
-    //Iterate over each character in argument
+        //Iterate over each character in argument
     for (int i = 0, n = strlen(argv[1]); i < n; i++)
     {
         if (!isdigit(argv[1][i]))
@@ -26,10 +25,8 @@ int main(int argc, string argv[2])
             return 1;
         }
     }
-    
     //Once characters pass argument check, store key into int k
     int k = atoi(argv[1]);
-    
     //Check if integer is non negative
     if (k < 0)
     {
