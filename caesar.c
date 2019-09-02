@@ -16,12 +16,12 @@ int main(int argc, string argv[2])
     {
         printf("Success\n");
     }
-        //Iterate over each character in argument
+    //Iterate over each character in argument
     for (int i = 0, n = strlen(argv[1]); i < n; i++)
     {
         if (!isdigit(argv[1][i]))
         {
-             printf("Usage: ./caesar key\n");
+            printf("Usage: ./caesar key\n");
             return 1;
         }
     }
