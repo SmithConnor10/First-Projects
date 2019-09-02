@@ -44,13 +44,13 @@ int main(int argc, string argv[2])
     for (int i = 0, len = strlen(plaintext); i < len; i++)
     {  
         if (islower(plaintext[i]))
-            printf("%c", (plaintext[i] -'a' + k) % 26 + 'a');
+            printf("ciphertext: %c", (plaintext[i] -'a' + k) % 26 + 'a');
             
         else if (isupper(plaintext[i]))
-            printf("%c", (plaintext[i] -'A' + k) % 26 + 'A');
+            printf("ciphertext: %c", (plaintext[i] -'A' + k) % 26 + 'A');
             
         else
-            printf("%c", plaintext[i]);
+            printf("ciphertext: %c", plaintext[i]);
     }  
     printf("\n");
 }
