@@ -43,11 +43,11 @@ int main(int argc, string argv[2])
     {  
         if (islower(plaintext[i]))
         {
-            printf("%c", (plaintext[i] -'a' + k) % 26 + 'a');
+            printf("%c", (plaintext[i] - 'a' + k) % 26 + 'a');
         }
         else if (isupper(plaintext[i]))
         {
-            printf("%c", (plaintext[i] -'A' + k) % 26 + 'A');
+            printf("%c", (plaintext[i] - 'A' + k) % 26 + 'A');
         } 
         else
         {
